@@ -35,6 +35,8 @@ A lightweight REST API built with Django and TastyPie tested with Postman
    python manage.py migrate
    ```
 6. **Start the development server:**
+   ```bash
    python manage.py runserver
+   ```
 
 
