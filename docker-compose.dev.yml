@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        USE_POSTGRESQL: "false"
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - DEBUG=1
+      - USE_POSTGRESQL=false
+    command: python manage.py runserver 0.0.0.0:8000
